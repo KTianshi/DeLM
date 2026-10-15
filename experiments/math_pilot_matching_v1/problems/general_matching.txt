@@ -1,0 +1,67 @@
+Constructive maximum matching and Gallai-Edmonds decomposition
+
+Let G=(V,E) be an arbitrary finite undirected simple graph, with vertices
+numbered 1,...,n. A matching is a subset of E whose edges have pairwise disjoint
+endpoints. Write nu(G) for the maximum cardinality of a matching in G. A perfect
+matching covers every vertex. For X contained in V, G[X] is the induced graph
+on X and G-X is the induced graph on V minus X. Let o(H) be the number of
+connected components of H having an odd number of vertices. A graph H is
+factor-critical if H-v has a perfect matching for every vertex v of H.
+The empty graph has a perfect matching of size zero.
+
+Give one self-contained constructive treatment of maximum matching in general
+graphs that establishes ALL the following results.
+
+1. Maximum matching algorithm.
+Give a deterministic polynomial-time blossom-contraction algorithm returning a
+maximum-cardinality matching M of G. Define the search objects, their invariants,
+the circumstances in which contraction is allowed, how contracted edges retain
+original endpoint information, and how a matching or augmenting path is lifted
+when contractions are undone. Include precise mathematical pseudocode or an
+equally precise algorithm description. Prove the augmenting-path criterion and
+all contraction, lifting, progress and termination claims on which your algorithm
+relies. Handle nested contractions explicitly; naming Edmonds' algorithm or
+assuming a contraction lemma is not sufficient.
+
+2. Optimality certificate and min-max theorem.
+Give a polynomial-time procedure returning U contained in V together with M
+such that
+  2|M| = n + |U| - o(G-U).
+Prove the universal upper bound for every matching and every U, and thereby prove
+  nu(G) = min over U contained in V of (n + |U| - o(G-U))/2.
+The procedure must construct U, not only prove its existence or search all subsets.
+
+3. Gallai-Edmonds structural theorem and its construction.
+Define
+  D = {v in V : some maximum matching of G leaves v uncovered},
+  A = {v in V minus D : v has a neighbor in D},
+  C = V minus (D union A).
+Prove that each connected component of G[D] is factor-critical and that G[C]
+has a perfect matching. Prove that every maximum matching consists of a perfect
+matching on C, a matching covering all but one vertex within each component of
+G[D], and edges matching every vertex of A to vertices in distinct components
+of G[D]. Prove conversely that every matching of this described form is maximum,
+and prove that U=A achieves the certificate equality in part 2.
+Give a polynomial-time procedure computing D,A,C. Reusing your already proved
+maximum matching algorithm is allowed, but account for every invocation.
+
+4. Full algorithmic accounting and edge cases.
+Give explicit polynomial upper bounds for all procedures above, including search,
+contraction, lifting, certificate construction and decomposition. An optimal
+exponent is not required. The input is an n-by-n adjacency matrix; you may use
+a word RAM with O(log(n+2))-bit words. State your representations and account for
+their manipulation, including parallel edges or endpoint records introduced by
+contraction. Address n=0, isolated vertices, disconnected graphs, graphs with
+perfect matchings, and components consisting of a single vertex.
+
+Prove every matching-specific theorem or lemma that you use. In particular,
+Berge's lemma, Tutte's theorem, the Tutte-Berge formula, blossom contraction
+results, Hall's theorem, and the Gallai-Edmonds theorem may not be invoked as
+unproved black boxes. Elementary finite-set arguments, induction and standard
+graph traversal algorithms may be used without proof. A named theorem, a
+reference to a published solution, or computational testing does not replace a
+proof. Definitions introduced in one part must remain consistent in all parts.
+
+The deliverable is one complete mathematical proof with precise algorithm
+descriptions, not an executable implementation. Establishing only the matching
+algorithm or only the min-max formula does not satisfy the task.

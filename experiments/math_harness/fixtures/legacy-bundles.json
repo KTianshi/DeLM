@@ -1,0 +1,80 @@
+{
+  "math_pilot": {
+    "smoke": {
+      "configuration_sha256": "ffaa692ed359f4e8ba653893fce7f48dd06fdeb33b0ec5abe7893ce7cee332b3",
+      "schedule_sha256": "5254171f2aa71b5a632e31c9dd0f3976dadd47a0f400b0b8732157723c533e26",
+      "worker_files_sha256": "e31871f347fc61761678d5bb9c4ff8d9f0b9ca5ca9dfd5fccc669f18bc94edf0"
+    },
+    "calibration": {
+      "configuration_sha256": "3cc2d094da0bed93f82cdd42f2b23a40aa1d61f08b784f3b2f542c8b32a4931c",
+      "schedule_sha256": "b908487d54445fc4af9187fd732419d08326dcc3b665d83ebe230fd53fb3ccaf",
+      "worker_files_sha256": "0238911497b015ace999bba3fe1268a779f5e35e2d24b56716abdb695f4290d7"
+    },
+    "measured": {
+      "configuration_sha256": "3cc2d094da0bed93f82cdd42f2b23a40aa1d61f08b784f3b2f542c8b32a4931c",
+      "schedule_sha256": "97234e157aa0be330167eecca51559bf26d4a671b51316590a1c2a99c13cc961",
+      "worker_files_sha256": "8d3e36bb02f20299ee04614e20a28a17a8fbe50d71d18765c39be7c584420197"
+    }
+  },
+  "math_pilot_v4": {
+    "smoke": {
+      "configuration_sha256": "9da26893911ced92011de53b089a9d5daaee91008e7769273e3a0eb3ef44e5f2",
+      "schedule_sha256": "5254171f2aa71b5a632e31c9dd0f3976dadd47a0f400b0b8732157723c533e26",
+      "worker_files_sha256": "378617fd4c83a16ff2db269572f09edd0894f35cfcfec54a9be317f540c5525a"
+    },
+    "calibration": {
+      "configuration_sha256": "e216a85cb0e7a53eaf87fee193a81dec89fe8551c013842d84a3cbe5f1a998b3",
+      "schedule_sha256": "b908487d54445fc4af9187fd732419d08326dcc3b665d83ebe230fd53fb3ccaf",
+      "worker_files_sha256": "0238911497b015ace999bba3fe1268a779f5e35e2d24b56716abdb695f4290d7"
+    },
+    "measured": {
+      "configuration_sha256": "e216a85cb0e7a53eaf87fee193a81dec89fe8551c013842d84a3cbe5f1a998b3",
+      "schedule_sha256": "97234e157aa0be330167eecca51559bf26d4a671b51316590a1c2a99c13cc961",
+      "worker_files_sha256": "e4739b11bb10f69c547f0444d5bb0bbaf780b7f54af34fde98ff992bca1bcb0d"
+    }
+  },
+  "math_pilot_matroid_v1": {
+    "smoke": {
+      "configuration_sha256": "fd765bb93da29b4728624d4e784ff6c8b8cbd29074c237052e03fc6652a454a2",
+      "schedule_sha256": "d98abad00eb1cf255761f1fb1e5b67713ce0aa8a8a5610bb6b73d931dc544d26",
+      "worker_files_sha256": "aa354c4b41415db9c4eebcc1cb14b6c73c497cbe5c7187cafeacb87693732ad7"
+    },
+    "calibration": {
+      "configuration_sha256": "92c61bb78c4447246b0de72bf3b00221e581911bd369471f117849f2eee44fd5",
+      "schedule_sha256": "95b56a9943a117377ed27152e3a26c9b9550900c8df813a945aabd8126f265eb",
+      "worker_files_sha256": "3fa1b720fb7effcc855a60296c1c0111597473838dc1a4d1a018c9bdb584e055"
+    },
+    "measured": {
+      "configuration_sha256": "92c61bb78c4447246b0de72bf3b00221e581911bd369471f117849f2eee44fd5",
+      "schedule_sha256": "f5ed3cc59b4d156e347456b90532de43ab1fe6d8a1f6a38337202ef413148a86",
+      "worker_files_sha256": "044f1db75cb2c3ccebc0523503e6ca6571741d559cb1ea010bf6edda806e1c8d"
+    },
+    "exploratory": {
+      "configuration_sha256": "92c61bb78c4447246b0de72bf3b00221e581911bd369471f117849f2eee44fd5",
+      "schedule_sha256": "406ab22c03f71a954cd5e161b93ee9ba5b6787776180c7a753c09094aca96fe0",
+      "worker_files_sha256": "2562c2e340b0b627aef78e7b04c66f8bff0b20a9d914d43bb80f1a84b18362b2"
+    }
+  },
+  "math_pilot_matching_v1": {
+    "smoke": {
+      "configuration_sha256": "49e83cba09eea3cf479fd0a14a1d9ae2305f7dbcb4f8c03271ec796db81af3c9",
+      "schedule_sha256": "d98abad00eb1cf255761f1fb1e5b67713ce0aa8a8a5610bb6b73d931dc544d26",
+      "worker_files_sha256": "aa354c4b41415db9c4eebcc1cb14b6c73c497cbe5c7187cafeacb87693732ad7"
+    },
+    "calibration": {
+      "configuration_sha256": "853a100c82953b8e6f296139852ca7cbe503d946c2f2e6671c8598ac58d328a0",
+      "schedule_sha256": "b3d613a39e7d6bf1563b89499f397a6d3d00ab63032d9d0e50484e9ca1356eea",
+      "worker_files_sha256": "36ccf131d398d56ff4e14858ce9cc637a2df67b52ee5ce17b8fd2f5890795cb2"
+    },
+    "measured": {
+      "configuration_sha256": "853a100c82953b8e6f296139852ca7cbe503d946c2f2e6671c8598ac58d328a0",
+      "schedule_sha256": "fd7bb0fb7f8759fb87bedb57741d8682b8da1b3436ee3b120b788f29f589e06a",
+      "worker_files_sha256": "53733965071766769ba9319cf12b64fc290e304840c7b4702522a1e953c36336"
+    },
+    "exploratory": {
+      "configuration_sha256": "853a100c82953b8e6f296139852ca7cbe503d946c2f2e6671c8598ac58d328a0",
+      "schedule_sha256": "14885a5067fa38bbbe85485af462c07399f18d6e0fbd98252b6572534fca7dd1",
+      "worker_files_sha256": "f04c359389b806ae0e5460dcd6c58702051904f8c24d56208717cf13e4c19cd1"
+    }
+  }
+}

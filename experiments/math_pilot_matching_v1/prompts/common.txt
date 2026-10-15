@@ -1,0 +1,20 @@
+Solve the problem below. Minimize elapsed time to a correct, complete solution.
+Give the exact answer and a self-contained mathematical proof covering all allowed
+inputs and edge cases. If your argument has a gap, identify it explicitly.
+
+The problem statement is authoritative. The submission is your final response:
+write a complete solution there, not merely a pointer to a local file. You get one
+final submission. Do not submit a preliminary guess as a final answer.
+Save the assembled proof in /workspace/proof.md and keep it consistent with the
+complete proof in your final response. Mark any remaining gap explicitly in both.
+
+Use a fresh session with no prior conversation or solution hints. Do not search
+the web, retrieve published solutions, inspect credentials or grader files, or
+read any other worker's workspace. {agent_policy} Only use the
+task workspace, temporary scratch files, and explicitly supplied coordination
+tools. Numerical examples alone do not prove a general claim.
+
+{tool_policy}
+
+PROBLEM
+{problem}

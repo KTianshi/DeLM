@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "problem_id": "general_matching",
+  "selection_status": "pending_single_agent_long_horizon_calibration",
+  "second_problem": null,
+  "harness": "codex",
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "auth_mode": "coding-plan",
+  "deadline_seconds": 3600,
+  "calibration_repeats": 1,
+  "measured_repeats": 3,
+  "tool_policy": "scratch-python",
+  "conditions": [
+    "single",
+    "orchestrator",
+    "delm"
+  ],
+  "primary_selection": "per_submission",
+  "stop_policy": "each_worker_stops_at_own_final_or_common_deadline",
+  "grading": "ai_proof_review",
+  "live_execution_implemented": true,
+  "prompt_protocol": "math-adaptive-coordination-v4-unchanged",
+  "proof_artifact": "proof.md",
+  "calibration_review": "Pending one single-agent calibration and full proof review. No comparison batch is approved by this calibration plan.",
+  "delm_worker_count": 4,
+  "experiment_protocol": "matching-long-horizon-calibration-v1",
+  "comparison_notes": "Same model, effort, tool policy, common/DeLM prompts and execution implementation as matroid-v1. New matching task and 60-minute deadline. Only one single-agent calibration is scheduled.",
+  "calibration_acceptance": {
+    "minimum_correct_seconds": 1800,
+    "maximum_seconds": 3600,
+    "correct_below_minimum": "does_not_meet_long_horizon_target",
+    "incorrect_or_uncertain": "not_qualified",
+    "timeout": "inconclusive_not_qualified",
+    "basis": "Single-agent duration and correctness only; no multi-agent outcomes inspected for task selection."
+  }
+}

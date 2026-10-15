@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "problem_id": "matroid_intersection",
+  "selection_status": "selected_by_judgment_for_exploratory_comparison",
+  "second_problem": null,
+  "harness": "codex",
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "auth_mode": "coding-plan",
+  "deadline_seconds": 2400,
+  "calibration_repeats": 2,
+  "measured_repeats": 3,
+  "tool_policy": "scratch-python",
+  "conditions": [
+    "single",
+    "orchestrator",
+    "delm"
+  ],
+  "primary_selection": "per_submission",
+  "stop_policy": "each_worker_stops_at_own_final_or_common_deadline",
+  "grading": "ai_proof_review",
+  "live_execution_implemented": true,
+  "prompt_protocol": "math-adaptive-coordination-v4-unchanged",
+  "proof_artifact": "proof.md",
+  "calibration_review": "No problem-specific calibration performed. User selected this theorem by judgment and authorized running it. This exploratory batch must not be described as calibration-validated.",
+  "delm_worker_count": 4,
+  "experiment_protocol": "matroid-exploratory-v1",
+  "comparison_notes": "Same common and DeLM prompt templates as v4. New problem and common 40-minute deadline; same model, effort, tools, individual submissions and stopping rule. Three repeats per condition, rotated condition order."
+}

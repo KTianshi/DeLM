@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "problem_id": "imo2024_c3",
+  "selection_status": "retained_after_preliminary_calibration_review",
+  "second_problem": null,
+  "harness": "codex",
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "auth_mode": "coding-plan",
+  "deadline_seconds": 1200,
+  "calibration_repeats": 2,
+  "measured_repeats": 3,
+  "tool_policy": "scratch-python",
+  "conditions": [
+    "single",
+    "orchestrator",
+    "delm"
+  ],
+  "primary_selection": "per_submission",
+  "stop_policy": "each_worker_stops_at_own_final_or_common_deadline",
+  "grading": "blinded_manual_proof_review",
+  "live_execution_implemented": true,
+  "prompt_protocol": "math-native-subagents-v3",
+  "proof_artifact": "proof.md",
+  "calibration_review": "Two calibration proofs passed preliminary non-blind Codex inspection; independent blinded review pending."
+}

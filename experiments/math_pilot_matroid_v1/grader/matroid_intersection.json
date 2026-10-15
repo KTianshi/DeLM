@@ -1,0 +1,35 @@
+{
+  "problem_id": "matroid_intersection",
+  "source": "Constructive finite unweighted matroid intersection theorem; independently composed task specification.",
+  "reference_url": "https://math.mit.edu/~goemans/18453S17/matroid-intersect-notes.pdf",
+  "reference_sections": [
+    "6.2 Largest Common Independent Set; theorem 6.1 and constructive proof"
+  ],
+  "worker_visibility": "Never mount or copy this directory into worker containers.",
+  "expected_answer": "A deterministic polynomial-oracle algorithm returning common independent S and U subset E with |S| = r1(U) + r2(E\\U), and a full proof from the independent-set axioms.",
+  "criteria": [
+    "A precise algorithm uses only independence oracles, not an uncharged rank oracle or an explicitly enumerated family.",
+    "Proves the universal upper bound |J| <= r1(X)+r2(E\\X) for every common independent J and every X.",
+    "Proves every needed matroid lemma from the three supplied axioms, including any rank, closure, circuit or exchange property used.",
+    "Proves that all constructed solutions are independent in both matroids. If using exchange paths, justify simultaneous exchanges; individual valid exchanges alone are not enough.",
+    "Proves progress and termination and constructs a certificate U achieving equality at termination. Carefully check orientation and complement conventions.",
+    "Gives explicit polynomial bounds on oracle queries and other work with length-n bit-vector sets, including construction of any auxiliary graph.",
+    "Handles n=0 and rank-zero matroids; allows arbitrary finite oracle matroids, not just representable or graphic matroids.",
+    "Provides complete theorem proof rather than citing matroid intersection/union or another unproved optimization theorem. Accept any fully justified valid alternative approach."
+  ],
+  "common_failure_modes": [
+    "Assumes an arbitrary alternating path preserves both matroid independences, with no shortest-path or equivalent justification.",
+    "Treats multiple individually valid exchanges as simultaneously valid without proof.",
+    "Uses an exchange-graph orientation with the wrong source/sink or certificate complement.",
+    "Gives an exponential subset enumeration and calls it polynomial, or omits oracle/bit-vector costs.",
+    "States standard matroid facts without deriving them despite the self-contained requirement.",
+    "Proves only the scalar min-max identity and supplies no polynomial certificate-producing algorithm."
+  ],
+  "verdicts": [
+    "correct",
+    "incorrect",
+    "uncertain",
+    "ungraded"
+  ],
+  "review_policy": "Review anonymized full submissions without condition or timing where possible. Check every obligation. The reference is a guide, not permission to assume lemmas omitted in its exposition or follow any typographical error. Accept valid alternative proofs. Record uncertainty rather than assuming correctness. No automatic correctness claim; AI review is not formal verification."
+}

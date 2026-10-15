@@ -1,0 +1,2 @@
+For a positive integer n, find a formula for the sum of the first n positive odd
+integers and prove it. This is an infrastructure smoke test, not benchmark data.

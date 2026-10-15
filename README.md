@@ -384,3 +384,10 @@ task image require a new series. Existing attempts are never overwritten.
   url           = {https://arxiv.org/abs/2606.10662}
 }
 ```
+
+## Math experiments
+
+The [shared math experiment harness](experiments/README.md) prepares and runs
+versioned prose-proof experiment profiles with frozen inputs, isolated workers,
+usage collection and offline review packets. See its documentation for setup,
+profile selection, validation and historical-bundle migration.

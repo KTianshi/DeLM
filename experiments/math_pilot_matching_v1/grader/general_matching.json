@@ -1,0 +1,41 @@
+{
+  "problem_id": "general_matching",
+  "source": "Independently composed constructive maximum matching, Tutte-Berge and Gallai-Edmonds task.",
+  "reference_url": "https://math.mit.edu/~goemans/18455S20/lecs-matching.pdf",
+  "reference_sections": [
+    "1 Nonbipartite Matching",
+    "2 Edmonds Algorithm",
+    "3 Edmonds-Gallai decomposition"
+  ],
+  "worker_visibility": "Never mount or copy this directory into worker containers.",
+  "expected_answer": "Self-contained polynomial blossom algorithm, a tight Tutte-Berge witness, and a proved and constructible Gallai-Edmonds decomposition for every finite simple graph.",
+  "criteria": [
+    "Precise deterministic algorithm returning a maximum matching; search, state, contraction and lifting are sufficiently specified to execute.",
+    "Derives augmenting-path criterion and all needed blossom/contraction/lifting statements with exact hypotheses. Nested contractions preserve a valid matching and original endpoint information.",
+    "Proves progress and termination; does not conflate a larger lifted matching with a maximum matching in the original graph.",
+    "Proves 2|N| <= n+|U|-o(G-U) for all matchings N and U, and computes a U attaining equality for the returned M in polynomial time.",
+    "Defines D by vertices exposable by some maximum matching, A=N(D) minus D, and C as complement; proves factor-criticality of every D component and existence of a perfect matching on C.",
+    "Proves the claimed structure for EVERY maximum matching: perfect on C, internally near-perfect on each D component, and all A vertices matched into distinct D components. Also proves the converse and tightness of U=A.",
+    "Computes D,A,C in polynomial time. Repeated maximum-matching calls are allowed if justified and included in the bound.",
+    "Explicit polynomial word-operation bounds under stated representations cover all subroutines including nested contraction, original endpoint records, certificate and decomposition.",
+    "Handles empty/disconnected graphs, isolated vertices, perfect matching case, and singleton factor-critical components.",
+    "Every matching theorem used is proved. Standard elementary arguments and graph traversal are permitted. No exponential subset enumeration disguised as a polynomial step."
+  ],
+  "common_failure_modes": [
+    "Unjustified assertion that an arbitrary odd cycle can be contracted for matching optimization.",
+    "Assumes a maximum matching of a contracted graph always lifts to a maximum matching of the original graph; requires additional conditions or iterative augmentation.",
+    "Confuses alternating walks with simple alternating/augmenting paths, or reachable parity before and after contractions without proof.",
+    "Leaves nested blossom expansion undefined or loses original endpoints when identifying parallel edges.",
+    "Claims factor-criticality or Gallai-Edmonds structure from an unproved matching theorem, or proves the structure for only one maximum matching.",
+    "Uses an unproved Hall or Tutte theorem, or constructs certificate/decomposition by exponential enumeration.",
+    "Counts only augmentations while allowing exponential recursive work within an augmentation.",
+    "Submits a plausible algorithm sketch with major proof obligations deferred."
+  ],
+  "verdicts": [
+    "correct",
+    "incorrect",
+    "uncertain",
+    "ungraded"
+  ],
+  "review_policy": "Review the full submission against every obligation; AI review is not formal verification. The reference is a guide, not permission to assume omitted arguments or copy errors. Accept any valid fully proved implementation of the requested blossom-based approach. Record unresolved gaps as uncertain or incorrect. Calibration qualification depends on correctness and measured single-agent latency only."
+}

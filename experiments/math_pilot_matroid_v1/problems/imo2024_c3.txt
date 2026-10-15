@@ -1,0 +1,12 @@
+Let n be a positive integer. Seat 2n people around a circular table and designate
+n disjoint pairs, so each person has exactly one partner.
+
+Partners may shake hands whenever they occupy neighboring seats. A move exchanges
+the occupants of two neighboring seats, including the two seats across the end of
+any linear numbering of the circle.
+
+Find M(n), the smallest nonnegative integer such that every initial seating can
+be handled using at most M(n) moves, with every pair shaking hands at some point.
+Handshakes can occur initially or between moves and require no move themselves.
+Different pairs may shake hands at different times; they need not all be adjacent
+at the end. Give a complete proof for every positive integer n.

@@ -1,0 +1,23 @@
+{
+  "problem_id": "imo2024_c3",
+  "source": "IMO 2024 Shortlist, Combinatorics C3 (Belarus)",
+  "reference_url": "https://www.imo-official.org/assets/documents/problems/2024/IMO2024SL.pdf#page=42",
+  "reference_pdf_page_one_based": 42,
+  "expected_answer": "M(n) = n(n-1)/2",
+  "worker_visibility": "never mount or copy this directory into worker containers",
+  "criteria": [
+    "State the optimal bound for all positive integers n, including n=1.",
+    "Prove that some initial arrangements cannot be completed below the claimed bound.",
+    "Prove a valid strategy exists for every initial arrangement within that bound.",
+    "Justify all lemmas, swap counts, and termination; finite experiments are insufficient.",
+    "Use circular adjacency and allow different pairs to meet at different times."
+  ],
+  "verdicts": ["correct", "incorrect", "uncertain", "ungraded"],
+  "review_policy": "Blind condition, worker identity, and timing. Review the complete proof, accepting valid alternative arguments. Correct answer alone is insufficient. Record an explanation and unresolved gaps. Uncertain judgments remain unresolved until adjudicated; LLM agreement is not formal verification.",
+  "common_failure_modes": [
+    "Treating all pairs as needing to be adjacent simultaneously, without proving equivalence.",
+    "Showing a lower bound for one proposed strategy rather than for every possible strategy.",
+    "Using an invariant that can change more per move than the proof allows.",
+    "Claiming a general result from small-n enumeration."
+  ]
+}

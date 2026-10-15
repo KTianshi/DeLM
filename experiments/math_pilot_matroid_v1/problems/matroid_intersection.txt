@@ -1,0 +1,45 @@
+Constructive matroid intersection
+
+Let E be a finite set, with n = |E|. A matroid on E is a family I of subsets
+of E satisfying these three axioms:
+(1) The empty set belongs to I.
+(2) If A belongs to I and B is a subset of A, then B belongs to I.
+(3) If A and B belong to I and |A| < |B|, there is an element b in B minus A
+    such that A union {b} belongs to I.
+Members of I are called independent sets. Its rank function is
+r(X) = max{|J| : J is a subset of X and J belongs to I} for X a subset of E.
+
+You are given two matroids M1 = (E, I1) and M2 = (E, I2). Access to each
+matroid is through an independence oracle: for a submitted subset X of E,
+the oracle reports whether X belongs to its family of independent sets.
+The families are not supplied as explicit lists. Let r1 and r2 be their
+rank functions.
+
+Prove the following constructive theorem for every such pair of finite matroids:
+There is a deterministic algorithm, using a number of oracle queries and
+additional elementary operations polynomial in n, that returns sets S and
+U contained in E such that
+  S belongs to both I1 and I2, and
+  |S| = r1(U) + r2(E minus U).
+
+In particular, prove the min-max identity
+  max{|J| : J belongs to both I1 and I2}
+    = min{r1(X) + r2(E minus X) : X is a subset of E}.
+
+Give a precise mathematical description or pseudocode for the algorithm,
+a complete proof of its correctness and termination, and explicit polynomial
+bounds on its oracle queries and additional work. An optimal exponent is not
+required. Count each oracle query as one operation; represent subsets of E
+by length-n bit vectors and account for their manipulation when bounding
+additional work. Address the empty ground set and matroids of rank zero.
+
+The proof must be self-contained starting from the three matroid axioms above.
+Prove every additional matroid property or lemma you use. Elementary finite-set
+arguments and standard graph traversal algorithms may be used without proving
+them. Do not invoke matroid intersection, matroid union, or another optimization
+or min-max theorem as an unproved black box. Merely naming a known algorithm
+or citing a published proof does not satisfy the task.
+
+The deliverable is a mathematical proof with an algorithm description; an
+executable implementation is not required. Finite computational tests cannot
+replace the general proof.
